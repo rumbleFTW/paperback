@@ -1,7 +1,7 @@
 # **Paperback**
 
-[![paperback](https://img.shields.io/static/v1?label=rumbleFTW&message=dockerhub&color=white&logo=github)](https://hub.docker.com/repository/docker/rumbleftw/paperback/general)
-[![paperback](https://img.shields.io/static/v1?label=rumbleFTW&message=dockerhub&color=blue&logo=docker)](https://hub.docker.com/repository/docker/rumbleftw/paperback/general)
+[![paperback](https://img.shields.io/static/v1?label=paperback&message=ghcr&color=white&logo=github)](https://github.com/rumbleFTW/paperback/pkgs/container/paperback)
+[![paperback](https://img.shields.io/static/v1?label=paperback&message=dockerhub&color=blue&logo=docker)](https://hub.docker.com/repository/docker/rumbleftw/paperback/general)
 
 ## **Paperback is a minimal container for data analysis, machine learning, and scientific computing**
 
@@ -36,5 +36,5 @@ docker pull ghcr.io/rumbleftw/paperback:cpu
 To run the Docker container, use the following command:
 
 ```bash
-docker run -p 5000:1337 paperback:cpu
+docker run -p 5000:1337 ghcr.io/rumbleftw/paperback:cpu
 ```
