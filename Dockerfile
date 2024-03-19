@@ -26,4 +26,4 @@ RUN rm requirements.txt
 
 EXPOSE 1337
 
-CMD [ "jupyter", "notebook", "--ip", "0.0.0.0", "--port", "1337", "--NotebookApp.allow_origin='*'", "--allow-root", "--NotebookApp.token=${JUPYTER_TOKEN}" ]
+CMD [ "jupyter", "notebook", "--ip", "0.0.0.0", "--port", "1337", "--NotebookApp.allow_origin='*'", "--allow-root" ]
