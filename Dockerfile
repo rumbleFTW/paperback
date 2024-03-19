@@ -2,8 +2,6 @@ FROM nvidia/cuda:12.2.2-base-ubuntu22.04
 
 WORKDIR /content
 
-ENV JUPYTER_TOKEN=paperback
-
 COPY requirements.txt /content/
 
 # Installing tools
@@ -28,4 +26,4 @@ RUN rm requirements.txt
 
 EXPOSE 1337
 
-CMD [ "jupyter", "notebook", "--ip", "0.0.0.0", "--port", "1337", "--NotebookApp.allow_origin='*'", "--allow-root", "--NotebookApp.token=${JUPYTER_TOKEN}" ]
+CMD [ "jupyter", "notebook", "--ip", "0.0.0.0", "--port", "1337", "--NotebookApp.allow_origin='*'", "--allow-root" ]

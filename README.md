@@ -38,5 +38,3 @@ To run the Docker container, use the following command:
 ```bash
 docker run -p 5000:1337 ghcr.io/rumbleftw/paperback:cpu
 ```
-
-PS: By default the jupyter token is set as `paperback`. It can be modified in the Dockerfile.
