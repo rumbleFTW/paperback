@@ -6,6 +6,7 @@ COPY requirements.txt /content/
 
 # Installing tools
 RUN apt-get update && \
+    apt-get -y install git && \
     apt-get -y install curl && \
     apt-get -y install wget && \
     apt-get install -y python3.10 python3.10-dev python3.10-distutils && \
